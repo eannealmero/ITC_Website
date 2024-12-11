@@ -7,6 +7,8 @@
     <title>Product</title>
     <link rel="stylesheet" href="product.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="product.js" defer></script>
 </head>
 
 <body>
@@ -22,13 +24,12 @@
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="product.html" class="active">PRODUCT</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
-                    <li><a href="#service">SERVICE</a></li>
                 </ul>
             </nav>
         </div>
 
-        <button class="register-link"><a href="#register">REGISTER</a></button>
-        <button class="login-link"><a href="#login">LOG IN</a></button>
+        <button class="register-link" id="registerBtn"><a href="#register">REGISTER</a></button>
+        <button class="login-link" id="loginBtn"><a href="#login">LOG IN</a></button>
 
         <div class="products">
             <div class="products__text">
@@ -38,28 +39,72 @@
 
             <div class="products__container">
                 <div class="products__container__1">
-                    <img class="products__container__product__img__1" src="https://raketcontent.com/naruto_shippuden_the_official_coloring_book_9781974740932_hr_05b323322a.jpg" />
-                    <h4 class="small-heading">Naruto</h4>
-                    <p class="small-subheading">Author: Masashi Kishimoto</p>
+                    <img class="products__container__product__img__1" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1497928010i/34933208.jpg" />
+                    <h4 class="small-heading">Learning Transformed</h4>
+                    <p class="small-subheading">Author: Eric Sheninger <br> Thomas C. Murray</p>
                     <button class="products__container__product__btn">Buy now - P199</button>
                 </div>
 
                 <div class="products__container__2">
-                    <img class="products__container__product__img__2" src="https://gregory.ph/cdn/shop/products/BuyThe48LawsofPowerinthePhilippines.jpg?v=1629038452" />
-                    <h4 class="small-heading">The law of Power</h4>
-                    <p class="small-subheading">Author: Robert Greene</p>
+                    <img class="products__container__product__img__2" src="https://m.media-amazon.com/images/I/51itxiGy8WS._SY445_SX342_.jpg" />
+                    <h4 class="small-heading">Teach Like a Pirate</h4>
+                    <p class="small-subheading">Author: Dave Burgess</p>
                     <button class="products__container__product__btn">Buy now - P199</button>
                 </div>
 
                 <div class="products__container__3">
-                    <img class="products__container__product__img__3" src="https://cdn.animenewsnetwork.com/thumbnails/fit200x200/encyc/A20204-2351498559.1516422090.jpg" />
-                    <h4 class="small-heading">Major</h4>
-                    <p class="small-subheading">Author: Takuya Mitsuda</p>
+                    <img class="products__container__product__img__3" src="https://m.media-amazon.com/images/I/41Z0UF5-LnL._SY445_SX342_.jpg" />
+                    <h4 class="small-heading">Evolving Education</h4>
+                    <p class="small-subheading">Author: Dr. Katie Martin</p>
                     <button class="products__container__product__btn">Buy now - P199</button>
                 </div>
             </div>
-
         </div>
+
+        <!-- Popup Structure -->
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="popup-close" id="popupClose">&times;</span>
+                <p>Thank you for your order.</p>
+            </div>
+        </div>
+
+        <div id="blurBackground" class="blur-background"></div>
+
+        <div class="form" id="registerForm">
+            <h2>Register</h2>
+            <input type="email" name="email" placeholder="Enter Email Here" id="emailInput">
+            <input type="password" name="password" placeholder="Enter Password Here" id="passwordInput">
+            <button id="registerActionBtn" class="btnn">Register</button>
+        
+            <p class="link"><a href="#">Don't have an account</a></p>
+            <p class="liw">Log in with</p>
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-google"></i></a>
+                <a href="#"><i class="fab fa-skype"></i></a>
+            </div>
+        </div>
+
+        <div class="form" id="loginForm">
+            <h2>Log in</h2>
+            <input type="email" name="email" placeholder="Enter Email Here" id="loginEmailInput">
+            <input type="password" name="password" placeholder="Enter Password Here" id="loginPasswordInput">
+            <button id="loginActionBtn" class="btnn">Log in</button>
+        
+            <p class="link"><a href="#">Don't have an account</a></p>
+            <p class="liw">Log in with</p>
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-google"></i></a>
+                <a href="#"><i class="fab fa-skype"></i></a>
+            </div>
+        </div>
+
     </div>
     
 </body>

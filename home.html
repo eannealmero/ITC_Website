@@ -7,6 +7,8 @@
     <title>Library</title>
     <link rel="stylesheet" href="home.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="home.js" defer></script>
 </head>
 
 <body>
@@ -22,13 +24,13 @@
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="product.html">PRODUCT</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
-                    <li><a href="#service">SERVICE</a></li>
                 </ul>
             </nav>
         </div>
 
-        <button class="register-link"><a href="#register">REGISTER</a></button>
-        <button class="login-link"><a href="#login">LOG IN</a></button>
+        <button class="register-link" id="registerBtn"><a href="#register">REGISTER</a></button>
+        <button class="login-link" id="loginBtn"><a href="#login">LOG IN</a></button>
+        
         <!-- Content Section -->
         <div class="content">
             <h1>The Enlightenment Archive</h1>
@@ -57,13 +59,361 @@
                     <li>📽️ Virtual tours of historical archives.</li>
                     <li>💡 Holographic displays of ancient artifacts.</li>
                 </ul>
-                
-                
-                
             </div>
-
             <button class="order"><a href="#order">ORDER NOW</a></button>
         </div>
+
+            <!-- Modal -->
+        <div id="orderModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Available Books</h2>
+                <div class="modal-body">
+                    <!-- Book items -->
+                    <div class="book-item">
+                        <img src="https://m.media-amazon.com/images/I/41xuVdFkImL._SY445_SX342_.jpg" alt="Book 1">
+                        <div class="book-info">
+                            <div class="title">
+                                <h3>A Passion for Kindness </h3>
+                                <p>Author: Tamara Letter</p>
+                                <p>Price: $10</p>
+                            </div>
+                            
+                            <div class="context">
+                                <p class="book1">A book focused on bringing more kindness into the world. Tamara shares personal experiences and highlights the ideas of other educators and offers kindness cultivators and reflective questions to guide educators along the <br> way to more kindness. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://m.media-amazon.com/images/I/61iEsk5SuFL._SY466_.jpg" alt="Book 1">
+                        <div class="book-info">
+                            <div class="title">
+                                <h3>Balance Like a  Pirate</h3>
+                                <p>Author: Jessican Cabeen</p>
+                                <p>Price: $10</p>
+                            </div>
+                            
+                            <div class="context">
+                                <p class="book2">In this book, the authors share the importance of finding balance in our lives as educators and share their personal strategies for doing so. Finding balance is a challenge and this book can definitely help.</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://m.media-amazon.com/images/I/51itxiGy8WS._SY445_SX342_.jpg" alt="Book 1">
+                        <div class="book-info">
+                            <div class="title">
+                                <h3>Teach Like a Pirate</h3>
+                                <p>Author: Dave Burgess</p>
+                                <p>Price: $10</p>
+                            </div>
+                            
+                            <div class="context">
+                                <p class="book3">It is a book full of personal experiences, inspirational quotes, reflection questions, and ideas for how to create more engaging lessons, promote student curiosity and build rapport in our classrooms. Teach Like a Pirate was the first book about education that I had read in years and the one that pushed me to start taking some risks in my own classroom. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://images3.penguinrandomhouse.com/cover/9780679764175" alt="Book 1">
+                        <div class="book-info">
+                            <div class="title">
+                                <h3>Letting Go</h3>
+                                <p>Author: Philip Roth</p>
+                                <p>Price: $10</p>
+                            </div>
+                            
+                            <div class="context">
+                                <p class="book4">Letting Go presents as brilliant a fictional portrait as we have of a mid-century America defined by social and ethical constraints and by moral compulsions conspicuously different from those of today.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://m.media-amazon.com/images/I/71-pQZOEJtL._SY466_.jpg" alt="Book 1">
+                        <div class="book-info">
+                            <div class="title">
+                                <h3>Culturally Responsive <br> Teaching and The Brain</h3>
+                                <p>Author: Zaretta Hammond</p>
+                                <p>Price: $10</p>
+                            </div>
+                            
+                            <div class="context">
+                                <p class="book5">It is an interesting read about brain science and focuses on how educators can boost engagement and “rigor among culturally and linguistically diverse students.” Hammond explores how culture can impact learning and how the brain processes data. There are strategies provided that will help educators to provide more personalized and relevant learning experiences for all students and empower them to become independent learners. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://m.media-amazon.com/images/I/6170hYc1HiL._SY466_.jpg" alt="Book 1">
+                        <div class="book-info">
+                            <div class="title">
+                                <h3>Culturize</h3>
+                                <p>Author: Jimmy Casas</p>
+                                <p>Price: $10</p>
+                            </div>
+                            
+                            <div class="context">
+                                <p class="book6">It is a book that will inspire educators to focus on “every student every day whatever it takes” in order to bring about amazing changes for student learning. In Culturize, Casas shares the four core principles for school success: Be a champion for students, expect excellence, carry the banner for the school, and be a merchant of hope. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://m.media-amazon.com/images/I/41UjqAwGVBL._SY445_SX342_.jpg" alt="Book 1">
+                        <div class="book-info">
+                            <div class="title">
+                                <h3>Daring Greatly</h3>
+                                <p>Author: Brené Brown</p>
+                                <p>Price: $10</p>
+                            </div>
+                            
+                            <div class="context">
+                                <p class="book7">It is a book for every educator to learn how to be comfortable with vulnerability. Inspiring to read, this book offers stories which will lead you to reflect on your personal and professional life and it does so in a way that inspires, supports, pushes and even entertains.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://m.media-amazon.com/images/I/41HB3UBVr9L._SY445_SX342_.jpg" alt="Book 1">
+                        <div class="book-info">
+                            <div class="title">
+                                <h3>Drive: The Surprising Truth <br> About What Motivates Us</h3>
+                                <p>Author: Daniel Pink</p>
+                                <p>Price: $10</p>
+                            </div>
+                            
+                            <div class="context">
+                                <p class="book8">It explores the puzzle of motivation. Through his research, Pink uncovers the key elements of autonomy, mastery and purpose and how they connect with motivation. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://m.media-amazon.com/images/I/41Z0UF5-LnL._SY445_SX342_.jpg" alt="Book 1">
+                        <div class="book-info">
+                            <div class="title">
+                                <h3>Evolving Education</h3>
+                                <p>Author: Dr. Katie Martin</p>
+                                <p>Price: $10</p>
+                            </div>
+
+                            <div class="context">
+                                <p class="book9">It explores how to bring about change to schools, to promote more authentic learning experiences for students, and what we can do to place students in the lead more. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://m.media-amazon.com/images/I/41CaOWIyyCL._SX342_SY445_.jpg" alt="Book 1">
+                        <div class="book-info">
+                            <div class="title">
+                                <h3>Evolving Learner</h3>
+                                <p>Authors: Lainie Rowell, <br> Dr. Kristy Andre, and <br> Dr. Lauren Steinmann</p>
+                                <p>Price: $10</p>
+                            </div>
+                            
+                            <div class="context">
+                                <p class="book10">It shares strategies for accomplishing successful professional learning through a framework where students and teachers are active agents of learning.  The book examines ideas and strategies that Empower Educators to learn from kids, fears, and the world in a cycle of continuous Improvement. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://m.media-amazon.com/images/I/51iIha6C1-L._SY445_SX342_.jpg" alt="Book 1">
+                        <div class="book-info">
+                            <div class="title">
+                                <h3>For White Folks Who <br> Teach In The Hood: <br> Reality Pedagogy And <br>Urban Education</h3>
+                                <p>Author: Christopher Emdin</p>
+                                <p>Price: $10</p>
+                            </div>
+                            
+                            <div class="context">
+                                <p class="book11">It explores “reality pedagogy” and how to implement culturally responsive practices in our classrooms. Emdin shares his personal experiences with teaching in urban schools and the effects of inequality on students of color.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://m.media-amazon.com/images/I/51wLH+bEoYL._SX342_SY445_.jpg" alt="Book 1">
+                        <div class="book-info">
+                            <div class="title">
+                                <h3>It’s OK to Say They: <br> Tips for Educators</h3>
+                                <p>Author: Christy Whittlesey</p>
+                                <p>Price: $10</p>
+                            </div>
+                            
+                            <div class="context">
+                                <p class="book12">It is full of resources for educators to support transgender and nonbinary students. The book includes first person narratives and offers strategies for educators and even a dictionary of relevant terms.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://m.media-amazon.com/images/I/51uo6sbasQL._SY445_SX342_.jpg" alt="Book 1">
+                        <div class="book-info">
+                            <div class="title">
+                                <h3>The Innovator’s Mindset</h3>
+                                <p>Author: George Couros</p>
+                                <p>Price: $10</p>
+                            </div>
+                            
+                            <div class="context">
+                                <p class="book13">It is focused on empowering educators to bring about change in their classrooms by taking some risks, experiencing failures, and providing students with more opportunities to lead and create.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://m.media-amazon.com/images/I/51pGqR8YxWL._SY445_SX342_QL70_FMwebp_.jpg" alt="Book 1">
+                        <div class="book-info">
+                            <div class="title">
+                                <h3>Kids These Days: <br> A Game Plan for <br> (Re)Connecting with Those <br> We Teach, Lead, & Love</h3>
+                                <p>Author: Dr. Jody Carrington</p>
+                                <p>Price: $10</p>
+                            </div>
+                            
+                            <div class="context">
+                                <p class="book14">It is a book that shares Dr. Carrington’s research and personal experiences working with students and families. The book emphasizes the importance of connections and building relationships so we can best serve our students.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://m.media-amazon.com/images/I/61Di+gPkqXL._SY466_.jpg" alt="Book 1">
+                        <div class="book-info">
+                            <div class="title">
+                                <h3>LAUNCH</h3>
+                                <p>Authors: A.J. Juliani and <br> John Spencer</p>
+                                <p>Price: $10</p>
+                            </div>
+                            
+                            <div class="context">
+                                <p class="book15">It is about empowering students through design thinking. The authors take you through the steps of the LAUNCH cycle, which is very helpful for educators interested in trying design thinking or genius hour projects. Full of visuals, templates, lesson plans and a LAUNCH notebook.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://ascd.org/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fcguvp07qpj80%2Fb1790333-aa51-47b1-a665-01d86ea8bead%2F933f8247e0ee7db2a8c889b844eb5994%2F117034b.jpg%3Fq%3D90&w=384&q=75" alt="Book 1">
+                        <div class="book-info">
+                            <div class="title">
+                                <h3>Learning Transformed</h3>
+                                <p>Author: Eric Sheninger Thomas <br> C. Murray</p>
+                                <p>Price: $10</p>
+                            </div>
+                            
+                            <div class="context">
+                                <p class="book16">It identifies 8 keys to transform schools and learning to best prepare our students for the future. With all that we know about how students learn, the nature of the world they will face after graduation, and the educational inequities that have existed for centuries, maintaining a traditional, one-size-fits-all approach to teaching and learning is tantamount to instructional malpractice.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://lostatschool.org/images/cover-3.jpg" alt="Book 1">
+                        <div class="book-info">
+                            <div class="title">
+                                <h3>Lost at School</h3>
+                                <p>Author: Ross W. Greene</p>
+                                <p>Price: $10</p>
+                            </div>
+                            
+                            <div class="context">
+                                <p class="book17">It will help educators to better understand and work with students and challenging behaviors in the classroom. Through Greene’s Collaborative and Proactive Solutions (CPS) Model and from the narrative and stories shared in the book, the importance of building relationships resonates throughout.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://images.squarespace-cdn.com/content/v1/5cd9b5dca09a7e0ebb1e4937/1569953648195-2HZD4806F5DZBJ48W7LG/P%26A-Book-stack.jpg?format=750w" alt="Book 1">
+                        <div class="book-info">
+                            <div class="title">
+                                <h3>Personal and Authentic</h3>
+                                <p>Author: Tom Murray</p>
+                                <p>Price: $10</p>
+                            </div>
+                            
+                            <div class="context">
+                                <p class="book18">It provides personal stories from Tom as well as more than 50 educator vignettes shared in “Make it Stick” and “In Practice” sections. Murray shares his “Personal & Authentic Framework” to empower educators to create more authentic learning experiences in our classrooms.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1545406783i/40916322.jpg" alt="Book 1">
+                        <div class="book-info">
+                            <div class="title">
+                                <h3>Teaching AI</h3>
+                                <p>Author: Michelle Zimmerman</p>
+                                <p>Price: $10</p>
+                            </div>
+                            
+                            <div class="context">
+                                <p class="book19">It is for any educator looking to better understand artificial intelligence, how it will impact the future, and what it means for education. The book includes scenarios, tools, activities, reflection questions and ideas to get started. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://www.gettingsmart.com/wp-content/uploads/2021/09/PoP-1434x2048-1-630x900.jpg" alt="Book 1">
+                        <div class="book-info">
+                            <div class="title">
+                                <h3>Power of Place</h3>
+                                <p>Author: Tom Vander Ark, <br> Emily Liebtag, and <br> Nate McClennen</p>
+                                <p>Price: $10</p>
+                            </div>
+                            
+                            <div class="context">
+                                <p class="book20">It presents a thorough resource full of everything that educators (regardless of role and experience), as well as community members, need to get started with Place Based Education (PBE). An overview of PBE is provided, which includes an explanation of the six design principles and the context of place-based learning.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="blurBackground" class="blur-background"></div>
+
+        <div class="form" id="registerForm">
+            <h2>Register</h2>
+            <input type="email" name="email" placeholder="Enter Email Here" id="emailInput">
+            <input type="password" name="password" placeholder="Enter Password Here" id="passwordInput">
+            <button id="registerActionBtn" class="btnn">Register</button>
+        
+            <p class="link"><a href="#">Don't have an account</a></p>
+            <p class="liw">Log in with</p>
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-google"></i></a>
+                <a href="#"><i class="fab fa-skype"></i></a>
+            </div>
+        </div>
+
+        <div class="form" id="loginForm">
+            <h2>Log in</h2>
+            <input type="email" name="email" placeholder="Enter Email Here" id="loginEmailInput">
+            <input type="password" name="password" placeholder="Enter Password Here" id="loginPasswordInput">
+            <button id="loginActionBtn" class="btnn">Log in</button>
+        
+            <p class="link"><a href="#">Don't have an account</a></p>
+            <p class="liw">Log in with</p>
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-google"></i></a>
+                <a href="#"><i class="fab fa-skype"></i></a>
+            </div>
+        </div>
+
     </div>
+
 </body>
 </html>
+
+
