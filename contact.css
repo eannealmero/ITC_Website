@@ -16,7 +16,7 @@ body {
 
 .main {
     width: 100%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(https://t3.ftcdn.net/jpg/09/60/16/74/360_F_960167441_wqrLOxp7fi8AF5YDhBmt4r5th4naAxTR.jpg);
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 50%), url(https://i.pinimg.com/736x/1e/ae/49/1eae490d5ef25f8917bda4f850769d28.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -36,8 +36,8 @@ body {
 }
 
 nav a.active {
-    color: black;
-    background-color: #87CEEB;
+    color: #fff;
+    background-color: #eac6ff;
 }
 
 .icon {
@@ -77,9 +77,9 @@ ul {
     list-style: none;
     padding: 5px 0;
     margin: 0 auto;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(145, 117, 163, 0.8);
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 10px rgba(226, 179, 225, 0.5);
     width: fit-content;
 }
 
@@ -101,8 +101,8 @@ ul li a {
 }
 
 ul li a:hover {
-    color: #000;
-    background-color: #87CEEB;
+    color: #fff;
+    background-color: #ffc8ea;
     transform: scale(1.1);
 }
 
@@ -120,8 +120,8 @@ ul li a:hover {
 .register-link a {
     display: inline-block;
     padding: 10px 20px;
-    background: #87CEEB;
-    color: #000;
+    background: #eac6ff;
+    color: #fff;
     text-decoration: none;
     font-family: Arial, sans-serif;
     font-weight: bold;
@@ -132,8 +132,8 @@ ul li a:hover {
 }
 
 .register-link a:hover {
-    background-color: #00ff00;
-    color: #000;
+    background-color: #ffc8ea;
+    color: #fff;
     transform: scale(1.05);
 }
 
@@ -155,8 +155,8 @@ ul li a:hover {
 .login-link a {
     display: inline-block;
     padding: 10px 20px;
-    background: #87CEEB;
-    color: #000;
+    background: #eac6ff;
+    color: #fff;
     text-decoration: none;
     font-family: Arial, sans-serif;
     font-weight: bold;
@@ -167,8 +167,8 @@ ul li a:hover {
 }
 
 .login-link a:hover {
-    background-color: #00ff00;
-    color: #000;
+    background-color: #ffc8ea;
+    color: #fff;
     transform: scale(1.05);
 }
 
@@ -206,7 +206,7 @@ ul li a:hover {
     margin: 0;
     font-size: 13px;
     line-height: 25px;
-    color: white;
+    color: rgba(145, 117, 163, 0.8);
 }
 
 .people span {
@@ -221,7 +221,7 @@ ul li a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 15px;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(252, 209, 242, 0.8);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
     width: 400px;
@@ -234,9 +234,9 @@ ul li a:hover {
 
 .contacts h3 {
     font-family: 'Arial', sans-serif;
-    color: #87CEEB;
+    color: #987D9A;
     font-size: 24px;
-    border-bottom: 2px solid #87CEEB;
+    border-bottom: 2px solid #987D9A;
 }
 
 .contacts p {
@@ -248,13 +248,13 @@ ul li a:hover {
 }
 
 .contacts i {
-    color: #4a90e2;
+    color: #fff;
     text-decoration: none;
 }
 
 
 span, h2 {
-    color: white;
+    color: rgba(145, 117, 163, 0.8)
 }
 
 .form_message {
@@ -281,7 +281,7 @@ span, h2 {
 }
 
 .form_message form button {
-    background-color: #088178;
+    background-color: #FEEE91;
     color: #fff;
 }
 
@@ -302,7 +302,7 @@ button.white {
     font-size: 13px;
     font-weight: 600;
     padding: 11px 18px;
-    color: #fff;
+    color: #000;
     background-color: transparent;
     cursor: pointer;
     border: 1px solid #fff;
@@ -314,7 +314,7 @@ button.white {
     display: none;
     width: 290px;
     height: 450px;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(252, 209, 242, 0.8);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
     position: absolute;
     top: 250px;
@@ -331,7 +331,7 @@ button.white {
     width: 220px;
     font-family: sans-serif;
     text-align: center;
-    color: #4a90e2;
+    color: #987D9A;
     font-size: 22px;
     background-color: #fff;
     border-radius: 10px;
@@ -343,7 +343,7 @@ button.white {
     width: 240px;
     height: 35px;
     background: transparent;
-    border-bottom: 1px solid #4a90e2;
+    border-bottom: 1px solid #987D9A;
     border-top: none;
     border-right: none;
     border-left: none;
@@ -366,18 +366,18 @@ button.white {
 .btnn{
     width: 240px;
     height: 40px;
-    background: #87CEEB;
+    background: #FFF8E3;
     border: none;
     margin-top: 30px;
     font-size: 18px;
     border-radius: 10px;
     cursor: pointer;
-    color: #fff;
+    color: #CA8787;
     transition: 0.4s ease;
 }
 .btnn:hover{
     background: #fff;
-    color: #4a90e2;
+    color: #987D9A;
 }
 .btnn a{
     text-decoration: none;
@@ -394,7 +394,7 @@ button.white {
 }
 .form .link a{
     text-decoration: none;
-    color: #4a90e2;
+    color: #987D9A;
 }
 .liw{
     padding-top: 15px;
