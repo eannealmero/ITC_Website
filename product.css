@@ -16,7 +16,7 @@ body {
 
 .main {
     width: 100%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(https://t3.ftcdn.net/jpg/09/60/16/74/360_F_960167441_wqrLOxp7fi8AF5YDhBmt4r5th4naAxTR.jpg);
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 50%), url(https://i.pinimg.com/736x/1e/ae/49/1eae490d5ef25f8917bda4f850769d28.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -36,8 +36,8 @@ body {
 }
 
 nav a.active {
-    color: black;
-    background-color: #87CEEB;
+    color: #fff;
+    background-color: #eac6ff;
 }
 
 .icon {
@@ -77,9 +77,9 @@ ul {
     list-style: none;
     padding: 5px 0;
     margin: 0 auto;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(145, 117, 163, 0.8);
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 10px rgba(226, 179, 225, 0.5);
     width: fit-content;
 }
 
@@ -101,8 +101,8 @@ ul li a {
 }
 
 ul li a:hover {
-    color: #000;
-    background-color: #87CEEB;
+    color: #fff;
+    background-color: #ffc8ea;
     transform: scale(1.1);
 }
 
@@ -120,8 +120,8 @@ ul li a:hover {
 .register-link a {
     display: inline-block;
     padding: 10px 20px;
-    background: #87CEEB;
-    color: #000;
+    background: #eac6ff;
+    color: #fff;
     text-decoration: none;
     font-family: Arial, sans-serif;
     font-weight: bold;
@@ -132,8 +132,8 @@ ul li a:hover {
 }
 
 .register-link a:hover {
-    background-color: #00ff00;
-    color: #000;
+    background-color: #ffc8ea;
+    color: #fff;
     transform: scale(1.05);
 }
 
@@ -155,8 +155,8 @@ ul li a:hover {
 .login-link a {
     display: inline-block;
     padding: 10px 20px;
-    background: #87CEEB;
-    color: #000;
+    background: #eac6ff;
+    color: #fff;
     text-decoration: none;
     font-family: Arial, sans-serif;
     font-weight: bold;
@@ -167,8 +167,8 @@ ul li a:hover {
 }
 
 .login-link a:hover {
-    background-color: #00ff00;
-    color: #000;
+    background-color: #ffc8ea;
+    color: #fff;
     transform: scale(1.05);
 }
 
@@ -191,12 +191,12 @@ align-items: center;
 .heading {
     font-family: 'Courier New', monospace;
     font-size: 35px;
-    color: #87CEEB;
+    color: #E195AB;
     text-align: center;
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 4px solid #87CEEB;
+    border-right: 4px solid #E195AB;
     width: auto;
     animation: typing 4s steps(30) 1s forwards, blink-caret 0.75s step-end infinite;
     margin-left: 50%;
@@ -218,7 +218,7 @@ align-items: center;
         border-color: transparent;
     }
     100% {
-        border-color: #87CEEB;
+        border-color: #f3a3f0;
     }
 }
 
@@ -229,10 +229,10 @@ align-items: center;
     line-height: 1.8;
     letter-spacing: 0.8px;
     max-width: 900px;
-    color: #f0f0f0;
-    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    background: rgba(252, 209, 242, 0.8);
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.7);
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
     width: 100%;
     margin-bottom: 10px;
@@ -241,7 +241,7 @@ align-items: center;
 .products__container {
 display: flex;
 gap: 250px;
-color: #fff;
+color: #987D9A;
 }
 
 .products__container__product__img__1, .products__container__product__img__2, .products__container__product__img__3 {
@@ -275,7 +275,7 @@ margin-top: 15px;
 
 .products__container__product__btn {
 padding: 12px 17px;
-background-color: #473BF0;
+background-color: #FEEE91;
 color: #FFFFFF;
 border: none;
 border-radius: 8px;
@@ -289,7 +289,7 @@ margin-top: 30px;
 }
 
 .products__container__product__btn:hover, .products__container__product__btn:focus {
-background-color: #1c10cf;
+background-color: #f4a7f6;
 transform: scale(1.02);
 }
 
